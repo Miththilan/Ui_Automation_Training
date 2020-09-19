@@ -11,13 +11,10 @@ import com.test.qa.pageobjects.utils.PageBase;
  */
 public class ABTestPage extends PageBase {
     private static final Logger LOGGER = Logger.getLogger(ABTestPage.class);
-
     private static By hdrABTest = By.xpath("//h3");
-
     public static boolean isABTestPageDisplayed() {
         return getDriver().findElement(hdrABTest).isDisplayed();
     }
-
     public static void waitTillHeaderLoad() {
         waiTillVisible(hdrABTest, 2);
     }

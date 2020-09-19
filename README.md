@@ -1,4 +1,4 @@
 # ui_automation_training
-• Full Name: <br>
-• Name with Initials: <br>
-• Student ID No: <br>
+• Full Name: Nagarasa Miththilan
+• Name with Initials: N.Miththilan
+• Student ID No: SE/2016/028

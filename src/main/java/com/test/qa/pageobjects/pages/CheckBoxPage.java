@@ -13,9 +13,9 @@ import com.test.qa.pageobjects.utils.PageBase;
 public class CheckBoxPage extends PageBase {
     private static final Logger LOGGER = Logger.getLogger(CheckBoxPage.class);
 
-    private  static By hdrCheckBox = By.xpath("//h3[text()='Checkboxes']");
-    private static By checkBox1 = By.xpath("(//input[@type='checkbox'])[1]");
-    private static By checkBox2 = By.xpath("(//input[@type='checkbox'])[2]");
+    private static By hdrCheckBox = By.xpath("//h3[text()='Checkboxes']");
+    private static By checkBox1=By.xpath("(//input[@type='checkbox'])[1]");
+    private static By checkBox2=By.xpath("(//input[@type='checkbox'])[2]");
 
     /**
      *
@@ -34,7 +34,6 @@ public class CheckBoxPage extends PageBase {
         if (!checkbox.isSelected())
             checkbox.click();
     }
-
     public static void unCheckCheckBox1() {
         WebElement checkbox = getDriver().findElement(checkBox1);
         if (checkbox.isSelected())
@@ -64,4 +63,5 @@ public class CheckBoxPage extends PageBase {
     public static boolean isCheckBox2Checked() {
         return getDriver().findElement(checkBox2).isSelected();
     }
+
 }

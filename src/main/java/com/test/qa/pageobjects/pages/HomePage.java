@@ -15,23 +15,13 @@ public class HomePage extends PageBase {
     private static By hdrWelcome = By.className("heading");
     private static String commonLinkString = "//a[@href='LINK']";
 
-    /**
-     * Verify Home Page Displayed
-     *
-     * @throws null
-     * @return boolean
-     */
+    /** * Verify Home Page Displayed * * @throws null * @return boolean */
+
     public static boolean isHomePageDisplayed() {
         return getDriver().findElement(hdrWelcome).isDisplayed();
     }
 
-    /**
-     * Click Link
-     *
-     * @throws null
-     * @param link
-     * @return void
-     */
+    /** * Click Link * * @throws null * @param link * @return void */
     public static void clickLink(String link) {
         getDriver().findElement(By.xpath(commonLinkString.replace("LINK", link))).click();
         LOGGER.info("Link " + link + " Clicked");
